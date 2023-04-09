@@ -1,0 +1,223 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Css nariables */
+:root {
+    --navbar-hight: 40px;
+
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    /* justify-content: space-between; */
+
+}
+
+/* logo and image */
+#logo img {
+    /* margin: 10px 23px; */
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+}
+
+/* #logo image{
+    margin: 3px 6px;
+    height: 45px;
+    width: 20px;
+} */
+
+/* navigation bar: list styleing */
+
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+#navbar ul li a {
+    color: rgb(8, 6, 6);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 578px;
+
+    background: url('https://envato-shoebox-0.imgix.net/2fe9/a1bb-1bee-489d-b4f9-3113d1e00caf/1-07720.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1200&s=8fbb45c7265a6ccece8fa489acd89ce5');
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    color:white;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.6rem;
+
+}
+
+/* utility classes */
+.btn {
+    padding: 6px 20px;
+    border: 3px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* services sention */
+#services {
+    margin: 30px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 20px;
+    border-radius: 25px;
+    background-color: rgb(230, 238, 127);
+}
+
+#services .box img {
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* clients section */
+#client-section {
+    height: 300px;
+    position: relative;
+
+}
+
+#clients {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+.client-item {
+    padding: 35px;
+
+}
+
+#clients img {
+    height: 145px;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('https://st2.depositphotos.com/1001201/5444/i/950/depositphotos_54440811-stock-photo-girl-cooking-as-master-of.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    opacity: 0.9;
+
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('https://news.wttw.com/sites/default/files/styles/full/public/article/image-non-gallery/Bernadette%20Wurzinger%20from%20Pixabay.jpg?itok=vGjrzHca');
+
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client{
+    text-align: center;
+}
+.squ{
+    height: 45px;
+    width: 45px;
+    background-color: blueviolet;
+    margin: 3px;
+    border:2px dotted black;
+}
